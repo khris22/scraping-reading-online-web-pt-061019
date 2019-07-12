@@ -9,7 +9,7 @@ doc = Nokogiri::HTML(html)
 #   puts course.text.strip
 # end
 
-p doc.css(".tout__label.heading.heading--level-4")[0]
+p doc.css(".tout__label.heading.heading--level-4")[0].attributes
 
 # doc = Nokogiri::HTML(open("http://flatironschool.com/"))
 # p doc.css(".site-header__hero__headline").text.strip
